@@ -1,6 +1,7 @@
 header {
   width: 15%;
   height: 100vh;
+  flex: 1;
 }
 
 main {
@@ -8,4 +9,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 5;
+  row-gap: 20px;
 }
