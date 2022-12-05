@@ -1,0 +1,10 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  color: lightgray;
+}
