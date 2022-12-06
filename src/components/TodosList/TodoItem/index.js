@@ -32,6 +32,7 @@ const TodoItem = ({ taskTitle }) => {
         value={title}
         onChange={handleChange}
         className={completed ? 'line-through' : ''}
+        data-form-type="other"
       />
       <button type="button" id="trash-btn" onClick={handleClick}>
         <img src="images/trash-icon.png" alt="trash-icon" />
