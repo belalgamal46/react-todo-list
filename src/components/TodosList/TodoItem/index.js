@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
 import './TodoItem.css';
+import PropTypes from 'prop-types';
 
-const TodoItem = ({ taskTitle, task }) => {
+const TodoItem = ({ taskTitle }) => {
   const [title, setTitle] = useState(taskTitle);
   const [completed, setCompleted] = useState(false);
   const checkbox = useRef();
@@ -15,7 +16,10 @@ const TodoItem = ({ taskTitle, task }) => {
   };
 
   const handleChecked = () => {
-    checkbox.current.checked ? setCompleted(!completed) : setCompleted(!completed);
+    if (checkbox.current.checked) {
+      setCompleted(!completed);
+    }
+    setCompleted(!completed);
   };
 
   return (
@@ -36,4 +40,7 @@ const TodoItem = ({ taskTitle, task }) => {
   );
 };
 
+TodoItem.propTypes = {
+  taskTitle: PropTypes.string.isRequired,
+};
 export default TodoItem;

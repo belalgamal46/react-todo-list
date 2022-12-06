@@ -1,4 +1,5 @@
 import './InputTodo.css';
+import PropTypes from 'prop-types';
 
 const InputTodo = ({ handleTasksChange }) => {
   const handleSubmit = async (event) => {
@@ -18,6 +19,10 @@ const InputTodo = ({ handleTasksChange }) => {
       </form>
     </section>
   );
+};
+
+InputTodo.propTypes = {
+  handleTasksChange: PropTypes.func.isRequired,
 };
 
 export default InputTodo;

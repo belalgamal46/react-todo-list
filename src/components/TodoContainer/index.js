@@ -11,7 +11,6 @@ const TodoContainer = () => {
     const newItemId = tasks.length ? tasks[tasks.length - 1].id + 1 : 1;
     const newItem = { title, id: newItemId };
     setTasks((prevState) => [...prevState, newItem]);
-    console.log(tasks);
   };
 
   return (
