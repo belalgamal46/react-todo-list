@@ -3,11 +3,11 @@ form {
   position: relative;
 }
 
-.input-container {
+.input_container {
   width: 25%;
 }
 
-#todo-input {
+#todo_input {
   padding: 10px;
   border-radius: 100px;
   width: 100%;
@@ -16,11 +16,11 @@ form {
   flex: 10;
 }
 
-#todo-input:focus {
+#todo_input:focus {
   outline: none;
 }
 
-#add-todo-btn {
+#add_todo_btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -32,13 +32,15 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3rem;
+  color: #34a1a2;
 }
 
-#add-todo-btn img {
+#add_todo_btn img {
   width: 70%;
 }
 
-#add-todo-btn:active {
+#add_todo_btn:active {
   border-radius: 100px;
   background-color: rgba(0, 0, 0, 0.088);
 }

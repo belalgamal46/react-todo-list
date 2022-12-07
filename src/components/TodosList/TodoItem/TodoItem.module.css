@@ -1,4 +1,4 @@
-.todo-task-item {
+.todo_task_item {
   display: flex;
   column-gap: 20px;
   color: #000;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-#trash-btn {
+#trash_btn {
   width: 35px;
   height: 35px;
   display: flex;
@@ -17,25 +17,23 @@
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
+  font-size: 1.3rem;
+  color: red;
 }
 
-#trash-btn img {
-  width: 50%;
-}
-
-#trash-btn:hover {
+#trash_btn:hover {
   border-radius: 100%;
   background-color: #efefef;
 }
 
-#task-title {
+#task_title {
   flex: 1;
   font-size: 1rem;
   border: none;
   padding: 10px;
 }
 
-#task-title:focus {
+#task_title:focus {
   outline: none;
 }
 
@@ -43,6 +41,7 @@
   cursor: pointer;
 }
 
-.line-through {
+.line_through {
   text-decoration: line-through;
+  color: rgb(100, 100, 100);
 }

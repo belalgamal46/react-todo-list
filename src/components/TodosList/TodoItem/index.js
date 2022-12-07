@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
-import './TodoItem.css';
+import { IoMdTrash } from 'react-icons/io';
 import PropTypes from 'prop-types';
+import styles from './TodoItem.module.css';
 
 const TodoItem = ({ taskTitle }) => {
   const [title, setTitle] = useState(taskTitle);
@@ -12,7 +13,7 @@ const TodoItem = ({ taskTitle }) => {
   };
 
   const handleClick = (event) => {
-    event.target.closest('.todo-task-item').remove();
+    event.target.closest(`.${styles.todo_task_item}`).remove();
   };
 
   const handleChecked = () => {
@@ -23,19 +24,25 @@ const TodoItem = ({ taskTitle }) => {
   };
 
   return (
-    <li className="todo-task-item">
-      <input type="checkbox" name="checkbox" id="checkbox" ref={checkbox} onClick={handleChecked} />
+    <li className={styles.todo_task_item}>
+      <input
+        type="checkbox"
+        name="checkbox"
+        id={styles.checkbox}
+        ref={checkbox}
+        onClick={handleChecked}
+      />
       <input
         type="text"
         name="task-title"
-        id="task-title"
+        id={styles.task_title}
         value={title}
         onChange={handleChange}
-        className={completed ? 'line-through' : ''}
+        className={completed ? styles.line_through : ''}
         data-form-type="other"
       />
-      <button type="button" id="trash-btn" onClick={handleClick}>
-        <img src="images/trash-icon.png" alt="trash-icon" />
+      <button type="button" id={styles.trash_btn} onClick={handleClick}>
+        <IoMdTrash />
       </button>
     </li>
   );

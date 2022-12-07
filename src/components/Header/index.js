@@ -1,8 +1,8 @@
-import './Header.css';
+import styles from './Header.module.css';
 
 const Header = () => (
-  <section className="title-container">
-    <h1 className="title">Todos</h1>
+  <section className={styles.title_container}>
+    <h1 className={styles.title}>Todos</h1>
   </section>
 );
 
