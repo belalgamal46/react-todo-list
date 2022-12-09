@@ -1,0 +1,47 @@
+.todo_task_item {
+  display: flex;
+  column-gap: 20px;
+  color: #000;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#trash_btn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.3rem;
+  color: red;
+}
+
+#trash_btn:hover {
+  border-radius: 100%;
+  background-color: #efefef;
+}
+
+#task_title {
+  flex: 1;
+  font-size: 1rem;
+  border: none;
+  padding: 10px;
+}
+
+#task_title:focus {
+  outline: none;
+}
+
+#checkbox {
+  cursor: pointer;
+}
+
+.line_through {
+  text-decoration: line-through;
+  color: rgb(100, 100, 100);
+}

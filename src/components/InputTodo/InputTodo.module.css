@@ -1,0 +1,46 @@
+form {
+  display: flex;
+  position: relative;
+}
+
+.input_container {
+  width: 25%;
+}
+
+#todo_input {
+  padding: 10px;
+  border-radius: 100px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 10px rgb(186, 186, 186);
+  flex: 10;
+}
+
+#todo_input:focus {
+  outline: none;
+}
+
+#add_todo_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  flex: 1;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #34a1a2;
+}
+
+#add_todo_btn img {
+  width: 70%;
+}
+
+#add_todo_btn:active {
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.088);
+}
