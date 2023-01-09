@@ -14,7 +14,7 @@ const TodoList = ({ tasks }) => (
 
 TodoList.propTypes = {
   tasks: PropTypes.arrayOf(
-    PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number]))
+    PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])),
   ).isRequired,
 };
 
